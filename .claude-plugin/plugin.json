@@ -1,0 +1,30 @@
+{
+  "name": "veriacta",
+  "displayName": "VeriActa",
+  "version": "1.2.0+aa643ea0",
+  "description": "Official EU and national law for AI assistants: cited provisions as in force on any date.",
+  "author": {
+    "name": "VeriActa",
+    "url": "https://veriacta.ai"
+  },
+  "homepage": "https://veriacta.ai",
+  "repository": "https://github.com/AgentX-ai/veriacta-mcp",
+  "license": "MIT",
+  "keywords": [
+    "law",
+    "legal",
+    "tax",
+    "vat",
+    "poland",
+    "spain",
+    "eu",
+    "mcp",
+    "citations",
+    "accounting"
+  ],
+  "icon": "./icon.png",
+  "documentationUrl": "https://veriacta.ai/skill.md",
+  "supportUrl": "https://veriacta.ai/contact",
+  "privacyPolicyUrl": "https://veriacta.ai/privacy",
+  "termsOfServiceUrl": "https://veriacta.ai/terms"
+}

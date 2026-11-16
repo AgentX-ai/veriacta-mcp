@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "veriacta": {
+      "type": "http",
+      "url": "https://veriacta.ai/mcp"
+    }
+  }
+}

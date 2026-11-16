@@ -1,0 +1,15 @@
+{
+  "name": "veriacta",
+  "description": "Official EU and national law for AI assistants: cited provisions as in force on any date.",
+  "owner": {
+    "name": "VeriActa",
+    "url": "https://veriacta.ai"
+  },
+  "plugins": [
+    {
+      "name": "veriacta",
+      "source": "./",
+      "description": "Official EU and national law for AI assistants: cited provisions as in force on any date."
+    }
+  ]
+}
