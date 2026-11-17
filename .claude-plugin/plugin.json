@@ -13,14 +13,18 @@
   "keywords": [
     "law",
     "legal",
-    "tax",
-    "vat",
+    "legislation",
+    "eu",
+    "eur-lex",
     "poland",
     "spain",
-    "eu",
-    "mcp",
+    "germany",
+    "tax",
+    "vat",
     "citations",
-    "accounting"
+    "mcp",
+    "accounting",
+    "compliance"
   ],
   "icon": "./icon.png",
   "documentationUrl": "https://veriacta.ai/skill.md",

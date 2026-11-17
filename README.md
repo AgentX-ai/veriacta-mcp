@@ -1,4 +1,4 @@
-# VeriActa
+# VeriActa: EU and national law for AI assistants
 
 <!--
   Generated from the VeriActa MCP server's tool table and published with each
@@ -7,10 +7,13 @@
 
 Official EU and national law for AI assistants: cited provisions as in force on any date.
 
-VeriActa is a remote MCP server. Connect it to your AI assistant and ask a tax or legal question: the assistant
-gets the provisions in force on the date you mean, in full, from the official registers, and answers with the
-text quoted and cited. The same five tools serve every country: the country is a parameter, so a new country
-adds no tool.
+VeriActa is an MCP server and legislation API that gives AI assistants and AI agents the official text of EU law and the law of Poland, Spain and Germany. Connect it to Claude, ChatGPT or any other AI assistant that supports MCP connectors, ask a tax or legal question, and the answer quotes the provisions in force on the date you mean, in full, with their citation and a link to the official source.
+
+Sources: EU law from EUR-Lex, Polish law from the Dziennik Ustaw (ISAP), Spanish law from the BOE and German federal law from Gesetze im Internet. Ask about today or a past date: every wording in the official history is kept, and a date the history does not cover is flagged, never guessed. Cross-border compare puts an article of an EU directive or regulation next to the national provisions that carry it.
+
+For Poland it also finds PKD activity codes and PKWiU product and service symbols, reads official guidance (ZUS, the Ministry of Finance, eureka tax rulings), and checks a company in the public registers: VAT status, white-list bank accounts, the KRS entry and who may represent it.
+
+Five read-only tools, with the country as a parameter. Developers get the same law from the REST API (`/v1/law`). Sign in with OAuth or an API key; a new account gets 200 free credits. VeriActa gives legal information from official sources, not legal advice.
 
 ## Countries
 
