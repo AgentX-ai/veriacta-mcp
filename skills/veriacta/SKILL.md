@@ -121,7 +121,7 @@ A capability a country does not have answers `NOT_AVAILABLE` and names the count
 
 **`company_lookup`** (VeriActa: company registers)
 
-- Returns: A company in a country's public registers on a given day: tax status, registered bank accounts, register entry and who may represent it.
+- Returns: A company in a country's public registers on a given day: tax status, register entry and who may represent it, and whether a bank account is registered for it.
 - Use for: Checking a counterparty before a payment or a contract, by its tax or register number.
 - Then: Say which register and day each fact comes from. A service that did not answer is not a negative result.
 - Arguments:
@@ -129,6 +129,8 @@ A capability a country does not have answers `NOT_AVAILABLE` and names the count
   - `id` (required): The company's number: a tax number or a register number (Poland: NIP, KRS or REGON; dashes, spaces and a country prefix are fine).
   - `id_type`: Which number `id` is, when you know.
   - `date`: The day to check the status and bank accounts on, YYYY-MM-DD. Today when left out.
+  - `account`: A bank account to check: the result's `account_check` says whether it is registered for the company on `date` (Poland: the VAT white list; spaces and PL are fine).
+  - `list_accounts`: true lists every bank account registered for the company.
 
 ## Common workflows
 

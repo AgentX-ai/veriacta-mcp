@@ -129,7 +129,7 @@ Every tool only reads: none creates, changes or deletes anything. Every tool tak
 - **`law_lookup`** [read-only]: Provisions of a country's law in force on a date, in full, with their official citation and source.
 - **`classification_lookup`** [read-only]: A country's official activity or product classification: what a code includes and excludes, the codes closest to a description, how a code moves between versions.
 - **`guidance_lookup`** [read-only]: Passages from an authority's official guides, handbooks and rulings.
-- **`company_lookup`** [read-only, reads live registers]: A company in a country's public registers on a given day: tax status, registered bank accounts, register entry and who may represent it.
+- **`company_lookup`** [read-only, reads live registers]: A company in a country's public registers on a given day: tax status, register entry and who may represent it, and whether a bank account is registered for it.
 
 The server also offers a guide (`veriacta://guide`), a guide per country and prompts for the common workflows. Every result carries
 its text and the same body as structured content, under a published output schema.
