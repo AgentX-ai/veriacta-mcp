@@ -7,9 +7,9 @@
 
 Official EU and national law for AI assistants: cited provisions as in force on any date.
 
-VeriActa is an MCP server and legislation API that gives AI assistants and AI agents the official text of EU law and the law of Poland, Spain, Germany, Denmark, the Netherlands, Ireland, Finland, France, Sweden and Italy. Connect it to Claude, ChatGPT or any other AI assistant that supports MCP connectors, ask a tax or legal question, and the answer quotes the provisions in force on the date you mean, in full, with their citation and a link to the official source.
+VeriActa is an MCP server and legislation API that gives AI assistants and AI agents the official text of EU law and the law of Poland, Spain, Germany, Denmark, the Netherlands, Ireland, Finland, France, Sweden, Italy, Czechia, Estonia and Slovakia. Connect it to Claude, ChatGPT or any other AI assistant that supports MCP connectors, ask a tax or legal question, and the answer quotes the provisions in force on the date you mean, in full, with their citation and a link to the official source.
 
-Sources: EU law from EUR-Lex, Polish law from the Dziennik Ustaw (ISAP), Spanish law from the BOE, German federal law from Gesetze im Internet, Danish law from Retsinformation, Dutch law from wetten.overheid.nl, Irish law from the Law Reform Commission's Revised Acts, Finnish law from Finlex, French law from Légifrance, Swedish law from Riksdagen's open data and Italian law from Normattiva. Ask about today or a past date: every wording in the official history is kept, and a date the history does not cover is flagged, never guessed. Cross-border compare puts an article of an EU directive or regulation next to the national provisions that carry it.
+Sources: EU law from EUR-Lex, Polish law from the Dziennik Ustaw (ISAP), Spanish law from the BOE, German federal law from Gesetze im Internet, Danish law from Retsinformation, Dutch law from wetten.overheid.nl, Irish law from the Law Reform Commission's Revised Acts, Finnish law from Finlex, French law from Légifrance, Swedish law from Riksdagen's open data, Italian law from Normattiva, Czech law from e-Sbírka, Estonian law from Riigi Teataja and Slovak law from Slov-Lex. Ask about today or a past date: every wording in the official history is kept, and a date the history does not cover is flagged, never guessed. Cross-border compare puts an article of an EU directive or regulation next to the national provisions that carry it.
 
 For Poland it also finds PKD activity codes and PKWiU product and service symbols, reads official guidance (ZUS, the Ministry of Finance, eureka tax rulings), and checks a company in the public registers: VAT status, white-list bank accounts, the KRS entry and who may represent it.
 
@@ -28,6 +28,9 @@ Five read-only tools, with the country as a parameter. Developers get the same l
 - **France** (`FR`): law
 - **Sweden** (`SE`): law
 - **Italy** (`IT`): law
+- **Czechia** (`CZ`): law
+- **Estonia** (`EE`): law
+- **Slovakia** (`SK`): law
 
 There is nothing to install or run on your machine. The server is hosted at `https://veriacta.ai/mcp`, and this repository
 holds its listing in the MCP Registry.
