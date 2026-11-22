@@ -77,7 +77,7 @@ A capability a country does not have answers `NOT_AVAILABLE` and names the count
 
 **`jurisdictions`** (VeriActa: countries and what each offers)
 
-- Returns: The countries that are live and what each offers: law, classifications, official guidance, company registers. With a country, its notes on how to ask.
+- Returns: The countries that are live and what each offers: law, classifications, official guidance, company registers, case law. With a country, its notes on how to ask.
 - Use for: The first time you work with a country, when you are not sure a country is covered, or when a tool answers NOT_AVAILABLE. It is free.
 - Then: Follow the country's notes: the language and terms to search in, how its acts are named and cited.
 - Arguments:
@@ -140,6 +140,26 @@ A capability a country does not have answers `NOT_AVAILABLE` and names the count
   - `date`: The day to check the status and bank accounts on, YYYY-MM-DD. Today when left out.
   - `account`: A bank account to check: the result's `account_check` says whether it is registered for the company on `date` (Poland: the VAT white list; spaces and PL are fine).
   - `list_accounts`: true lists every bank account registered for the company.
+
+**`case_law_lookup`** (VeriActa: court judgments next to the law)
+
+- Returns: Court judgments that interpret or apply the law, linked to the provisions they concern: case number, date, keywords, operative part and a link to the official text; read gives the grounds by paragraph.
+- Use for: How the courts read a provision, whether a judgment settled a point, or a judgment someone cites by its number. Where a country has case law (see `jurisdictions`).
+- Then: Quote the operative part or the paragraphs you rely on with the case number and date. A judgment is not the law: confirm the provision's wording on the relevant date with law_lookup.
+- Arguments:
+  - `jurisdiction` (required): Whose courts: an ISO country code, or EU for the Court of Justice of the European Union.
+  - `action`: search: judgments that answer `query`. read: the text of `document`. by_reference: the judgment `reference` names. citing_provision: judgments on `act` (and `path`).
+  - `query`: The question or point, in the court's words; with read, the point to find in the judgment; with citing_provision, ranks the judgments by it.
+  - `reference`: A case number ("C-232/24"), an ECLI ("ECLI:EU:C:2025:820"), a CELEX number or a link to the judgment.
+  - `document`: A judgment's id from an earlier result, to read it.
+  - `page`: The page of the judgment's grounds to read (about 20,000 characters each).
+  - `language`: The language to read the judgment in, where the court publishes several (EU: any of the 24, en by default).
+  - `act`: The act whose provision the judgments apply, as law_lookup takes it ("VAT Directive", "32006L0112").
+  - `path`: The provision, as the act is cited ("Article 90(1)") or a path from law_lookup ("art:90/par:1").
+  - `court`: Only this court (EU: CJ for the Court of Justice, GC for the General Court).
+  - `from`: Only judgments delivered on or after this day, YYYY-MM-DD.
+  - `to`: Only judgments delivered on or before this day, YYYY-MM-DD.
+  - `limit`: How many judgments to return (1 to 10, default 5).
 
 ## Common workflows
 

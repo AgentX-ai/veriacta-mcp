@@ -9,11 +9,11 @@ Official EU and national law for AI assistants: cited provisions as in force on 
 
 VeriActa is an MCP server and legislation API that gives AI assistants and AI agents the official text of EU law and the law of 19 European countries. Connect it to Claude, ChatGPT or any other AI assistant that supports MCP connectors, ask a tax or legal question, and the answer quotes the provisions in force on the date you mean, in full, with their citation and a link to the official source.
 
-Sources: EU law from EUR-Lex, Polish law from the Dziennik Ustaw (ISAP), Spanish law from the BOE, German federal law from Gesetze im Internet, Danish law from Retsinformation, Dutch law from wetten.overheid.nl, Irish law from the Law Reform Commission's Revised Acts, Finnish law from Finlex, French law from Légifrance, Swedish law from Riksdagen's open data, Italian law from Normattiva, Czech law from e-Sbírka, Estonian law from Riigi Teataja, Slovak law from Slov-Lex, Luxembourg law from Legilux, Lithuanian law from the Register of Legal Acts (TAR), United Kingdom law from legislation.gov.uk, Swiss law from Fedlex, Norwegian law from Lovdata and Austrian law from RIS. Ask about today or a past date: every wording in the official history is kept, and a date the history does not cover is flagged, never guessed. Cross-border compare puts an article of an EU directive or regulation next to the national provisions that carry it.
+Sources: EU law from EUR-Lex, Polish law from the Dziennik Ustaw (ISAP), Spanish law from the BOE, German federal law from Gesetze im Internet, Danish law from Retsinformation, Dutch law from wetten.overheid.nl, Irish law from the Law Reform Commission's Revised Acts, Finnish law from Finlex, French law from Légifrance, Swedish law from Riksdagen's open data, Italian law from Normattiva, Czech law from e-Sbírka, Estonian law from Riigi Teataja, Slovak law from Slov-Lex, Luxembourg law from Legilux, Lithuanian law from the Register of Legal Acts (TAR), United Kingdom law from legislation.gov.uk, Swiss law from Fedlex, Norwegian law from Lovdata and Austrian law from RIS. Ask about today or a past date: every wording in the official history is kept, and a date the history does not cover is flagged, never guessed. Cross-border compare puts an article of an EU directive or regulation next to the national provisions that carry it. CJEU judgments come linked to the EU provisions they interpret, with their operative part.
 
 For Poland it also finds PKD activity codes and PKWiU product and service symbols, reads official guidance (ZUS, the Ministry of Finance, eureka tax rulings), and checks a company in the public registers: VAT status, white-list bank accounts, the KRS entry and who may represent it.
 
-Five read-only tools, with the country as a parameter. Developers get the same law from the REST API (`/v1/law`). Sign in with OAuth or an API key; a new account gets 200 free credits. VeriActa gives legal information from official sources, not legal advice.
+Six read-only tools, with the country as a parameter. Developers get the same law from the REST API (`/v1/law`). Sign in with OAuth or an API key; a new account gets 200 free credits. VeriActa gives legal information from official sources, not legal advice.
 
 ## Countries
 
@@ -130,15 +130,16 @@ npx skills add AgentX-ai/veriacta-mcp --skill veriacta
 - How do I fill in field K_47 of JPK_V7?
 - Compare the general VAT rate in Poland and Spain, with the articles.
 
-## Tools (5)
+## Tools (6)
 
 Every tool only reads: none creates, changes or deletes anything. Every tool takes the country as `jurisdiction`.
 
-- **`jurisdictions`** [read-only]: The countries that are live and what each offers: law, classifications, official guidance, company registers. With a country, its notes on how to ask.
+- **`jurisdictions`** [read-only]: The countries that are live and what each offers: law, classifications, official guidance, company registers, case law. With a country, its notes on how to ask.
 - **`law_lookup`** [read-only]: Provisions of a country's law in force on a date, in full, with their official citation and source.
 - **`classification_lookup`** [read-only]: A country's official activity or product classification: what a code includes and excludes, the codes closest to a description, how a code moves between versions.
 - **`guidance_lookup`** [read-only]: Passages from an authority's official guides, handbooks and rulings.
 - **`company_lookup`** [read-only, reads live registers]: A company in a country's public registers on a given day: tax status, register entry and who may represent it, and whether a bank account is registered for it.
+- **`case_law_lookup`** [read-only]: Court judgments that interpret or apply the law, linked to the provisions they concern: case number, date, keywords, operative part and a link to the official text; read gives the grounds by paragraph.
 
 The server also offers a guide (`veriacta://guide`), a guide per country and prompts for the common workflows. Every result carries
 its text and the same body as structured content, under a published output schema.
