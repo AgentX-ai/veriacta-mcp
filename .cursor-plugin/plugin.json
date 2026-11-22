@@ -1,7 +1,7 @@
 {
   "name": "veriacta",
   "displayName": "VeriActa",
-  "version": "1.7.0+c82eecd6",
+  "version": "1.8.0+d8eb20f4",
   "description": "Official EU and national law for AI assistants: cited provisions as in force on any date.",
   "author": {
     "name": "VeriActa"
@@ -34,6 +34,7 @@
     "united kingdom",
     "switzerland",
     "norway",
+    "austria",
     "tax",
     "vat",
     "citations",
