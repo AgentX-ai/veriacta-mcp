@@ -102,6 +102,27 @@ gemini extensions install https://github.com/AgentX-ai/veriacta-mcp
 
 The CLI opens a browser to sign in on the first call.
 
+### Google Antigravity
+
+This repository is also an Antigravity plugin: the skill plus this server, in one install.
+
+```bash
+agy plugin install https://github.com/AgentX-ai/veriacta-mcp
+```
+
+Antigravity opens a browser to sign in when the server first connects. Or add the server alone to
+`~/.gemini/config/mcp_config.json`:
+
+```json
+{
+  "mcpServers": {
+    "veriacta": {
+      "serverUrl": "https://veriacta.ai/mcp"
+    }
+  }
+}
+```
+
 ### Hosts without OAuth
 
 Create an API key at https://veriacta.ai/account and add it in the host's own settings as an `Authorization: Bearer` header

@@ -1,0 +1,52 @@
+{
+  "$schema": "https://antigravity.google/schemas/v1/plugin.json",
+  "name": "veriacta",
+  "displayName": "VeriActa",
+  "version": "1.10.0+b1db3963",
+  "description": "EU law and the law of 19 European countries for your agent: provisions quoted in full with citations, as in force on the date you ask about.",
+  "logo": "assets/logo.svg",
+  "suggestedPrompts": [
+    "When must a personal data breach be reported under the GDPR? Quote the article with its citation.",
+    "What is the VAT exemption limit for small businesses in Poland, and which article sets it?",
+    "Compare the general VAT rate in Poland and Spain, with the articles."
+  ],
+  "author": {
+    "name": "VeriActa",
+    "url": "https://veriacta.ai"
+  },
+  "homepage": "https://veriacta.ai",
+  "repository": "https://github.com/AgentX-ai/veriacta-mcp",
+  "license": "MIT",
+  "keywords": [
+    "law",
+    "legal",
+    "legislation",
+    "eu",
+    "eur-lex",
+    "poland",
+    "spain",
+    "germany",
+    "denmark",
+    "netherlands",
+    "ireland",
+    "finland",
+    "france",
+    "sweden",
+    "italy",
+    "czechia",
+    "estonia",
+    "slovakia",
+    "luxembourg",
+    "lithuania",
+    "united kingdom",
+    "switzerland",
+    "norway",
+    "austria",
+    "tax",
+    "vat",
+    "citations",
+    "mcp",
+    "accounting",
+    "compliance"
+  ]
+}

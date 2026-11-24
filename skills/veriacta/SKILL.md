@@ -10,8 +10,9 @@ answered call spends credits from the user's VeriActa account, and each result r
 
 ## One-time setup
 
-Check whether the connection already exists by looking for tools prefixed `mcp__veriacta__` (for example
-`mcp__veriacta__law_lookup`). If they are there, skip this section.
+Check whether the connection already exists: VeriActa's tools (`law_lookup`, `jurisdictions` and the others) on a
+server named after VeriActa, such as `mcp__veriacta__law_lookup` in Claude Code or the server `veriacta_veriacta`
+that the Antigravity plugin adds. If they are there, skip this section.
 
 If they are not, connect the MCP server at `https://veriacta.ai/mcp`. There are two ways in, and the first is better:
 
