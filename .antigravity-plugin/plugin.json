@@ -2,7 +2,7 @@
   "$schema": "https://antigravity.google/schemas/v1/plugin.json",
   "name": "veriacta",
   "displayName": "VeriActa",
-  "version": "1.10.0+b1db3963",
+  "version": "1.11.0+b1db3963",
   "description": "EU law and the law of 19 European countries for your agent: provisions quoted in full with citations, as in force on the date you ask about.",
   "logo": "assets/logo.svg",
   "suggestedPrompts": [
