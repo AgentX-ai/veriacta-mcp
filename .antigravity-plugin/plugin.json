@@ -4,7 +4,7 @@
   "displayName": "VeriActa",
   "version": "1.11.0+b1db3963",
   "description": "EU law and the law of 19 European countries for your agent: provisions quoted in full with citations, as in force on the date you ask about.",
-  "logo": "assets/logo.svg",
+  "logo": "assets/logo.png",
   "suggestedPrompts": [
     "When must a personal data breach be reported under the GDPR? Quote the article with its citation.",
     "What is the VAT exemption limit for small businesses in Poland, and which article sets it?",
