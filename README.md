@@ -97,7 +97,7 @@ Add it to `~/.cursor/mcp.json`:
 This repository is also a Gemini CLI extension:
 
 ```bash
-gemini extensions install https://github.com/AgentX-ai/veriacta-mcp
+gemini extensions install https://github.com/veriacta/veriacta-mcp
 ```
 
 The CLI opens a browser to sign in on the first call.
@@ -107,7 +107,7 @@ The CLI opens a browser to sign in on the first call.
 This repository is also an Antigravity plugin: the skill plus this server, in one install.
 
 ```bash
-agy plugin install https://github.com/AgentX-ai/veriacta-mcp
+agy plugin install https://github.com/veriacta/veriacta-mcp
 ```
 
 Antigravity opens a browser to sign in when the server first connects. Or add the server alone to
@@ -133,14 +133,14 @@ Create an API key at https://veriacta.ai/account and add it in the host's own se
 This repository is also a plugin: the skill plus this server, in one install. In Claude Code:
 
 ```
-/plugin marketplace add AgentX-ai/veriacta-mcp
+/plugin marketplace add veriacta/veriacta-mcp
 /plugin install veriacta@veriacta
 ```
 
 Or the skill alone, in any host that reads Agent Skills:
 
 ```bash
-npx skills add AgentX-ai/veriacta-mcp --skill veriacta
+npx skills add veriacta/veriacta-mcp --skill veriacta
 ```
 
 ## Ask it

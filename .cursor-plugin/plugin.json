@@ -7,7 +7,7 @@
     "name": "VeriActa"
   },
   "homepage": "https://veriacta.ai",
-  "repository": "https://github.com/AgentX-ai/veriacta-mcp",
+  "repository": "https://github.com/veriacta/veriacta-mcp",
   "license": "MIT",
   "logo": "icon.png",
   "keywords": [
